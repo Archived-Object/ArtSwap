@@ -1,4 +1,10 @@
 FirstApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/user"
+
+  get "pages/swap"
+
   resources :comments
 
   resources :users
