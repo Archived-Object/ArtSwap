@@ -26,8 +26,10 @@
       #loginbox {
         float:right;
         width: 180px;
-        height: 80px;
+        height: auto;
         border: 3px solid #302b35;
+        padding: 3px;
+        padding-bottom: 5px;
       }
       
       #content {
@@ -73,11 +75,15 @@
 
 
       <div id='loginbox'>
-          <%= loginbox %>
+        <b>Email:</b> <input type="text" name="email" /><br />
+        <b>Password:</b> <input type="password" name="pass" /><br />
+        <div>
+          <button type="button">Click Me!</button>
+        </div>
       </div>
       
       <div id='header'>
-        <a href = "/pages/home">
+        <a href = "/">
           <img src= "/images/logo.png" />
         </a>
       </div>

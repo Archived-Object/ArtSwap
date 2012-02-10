@@ -9,8 +9,12 @@ module ApplicationHelper
     end
   end
 
-  def loginbox
-  	"well FUCK that... FOR NOW"
+  def login(email,password)
+    u = User.find_by_email(email)
+    if u.password = password
+      return u
+    end
+    return nil
   end
 
 end

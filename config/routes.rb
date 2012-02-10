@@ -5,9 +5,19 @@ FirstApp::Application.routes.draw do
 
   get "pages/swap"
 
+  get "users/new"
+
+  match '/signup',  :to => 'users#new'
+  match '/swap',  :to => 'pages#swap'
+  match '/user',  :to => 'pages#user'
+  match '/home',  :to => 'pages#greeting'
+
+
   resources :comments
 
   resources :users
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

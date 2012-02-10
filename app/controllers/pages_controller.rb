@@ -3,8 +3,8 @@ class PagesController < ApplicationController
   	@title = 'Home'
   end
 
-  def user
-  	@title = "User"
+  def greeting
+  	
   end
 
   def swap

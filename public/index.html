@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <title>ArtSwap</title>
-
     <style type="text/css" media="screen">
       body {
+        margin: ;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        padding: 0;
         background-color: #1d1a21;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
         color: #7f7190;
       }
-    </style>
 
+      #page {
+        padding: 13px;
+      }
+
+      #header {
+        margin-bottom: 15px;
+      }
+
+      #loginbox {
+        float:right;
+        width: 180px;
+        height: 80px;
+        border: 3px solid #302b35;
+      }
+      
+      #content {
+        border: 3px solid #302b35;
+        padding: 25px;
+        width: auto;
+        height: auto;
+      }
+
+      #page {
+        background-color: #232027;
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+
+        a:link {color: #4e7300; text-decoration: none; }
+        a:active {color: #8fba06; text-decoration: none; }
+        a:visited {color: #9383a7; text-decoration: none; }
+        a:hover {color: #719506; text-decoration: none; }
+      }
+
+      #signup_button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        width: 190px;
+        color: #8fba06;
+        background: #4e7300;
+        font-size: 150%;
+        font-weight: bold;
+        padding: 20px;
+
+        -moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+      }
+
+      #footer {
+        clear: both;
+      }
+
+
+      #body {
+        border-top: 1px solid #302b35;
+        margin-top: 25px;
+        padding-top: 15px;
+        color: #7f7190;
+      }
+    }
+
+
+    </style>
   </head>
 
   <body>
+    <div id="page">
+      
+      <script type="text/javascript">
+          function TransferToURL(){ 
+            window.location.href=window.location+"pages/home" 
+          }
+          //if logged in, transfer
+          //TransferToURL()
+      </script>
+      
+      <div id='header'>
+        <a href = "/">
+          <img src= "/images/logo.png" />
+        </a>
+      </div>
+      
+      <div id="content">
+        <h1> Welcome to ArtSwap</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non rhoncus arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget leo massa. Mauris quis enim tellus, sed sollicitudin nisi.
+        
+        &nbsp;
 
-    <script type="text/javascript">
-      function TransferToURL(){ 
-        window.location.href=window.location+"pages/home" 
-      }
-      TransferToURL()
-  </script>
-  <h1>Redirecting.....</h1>
-  <a href = "pages/home" >click here if you are not immediatly redirected</a>
+        <a href = '/signup'>
+          <div id='signup_button'>
+            Signup
+          </div>
+        </a>
+
+      </div>
+
+      <div id="footer">&nbsp;</div>
+    </div>
+
   </body>
 </html>
