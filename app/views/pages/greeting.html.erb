@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" media="screen">
+
+      #signup_button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        width: 190px;
+        color: #8fba06;
+        background: #4e7300;
+        font-size: 150%;
+        font-weight: bold;
+        padding: 20px;
+
+        -moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+      }
+
+
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+  		
+  		<%= 
+  		if @user!=nil
+  			redirect_to "/pages/home"
+  		end
+  		%>
+
+        <h1> Welcome to ArtSwap</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non rhoncus arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget leo massa. Mauris quis enim tellus, sed sollicitudin nisi.
+        
+        &nbsp;
+
+        <a href = '/signup'>
+          <div id='signup_button'>
+            Signup
+          </div>
+        </a>
+
+     
+  </body>
+</html>
