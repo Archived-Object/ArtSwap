@@ -21,6 +21,8 @@
 
       #header {
         margin-bottom: 15px;
+        height: 120px;
+        px;
       }
 
       #loginbox {
@@ -65,7 +67,7 @@
 
   <body>
     <div id="page">
-      
+
       <style type="text/css">
         a:link {color: #4e7300; text-decoration: underline; }
         a:active {color: #8fba06; text-decoration: underline; }
@@ -75,18 +77,29 @@
 
 
       <div id='loginbox'>
-        <b>Email:</b> <input type="text" name="email" /><br />
-        <b>Password:</b> <input type="password" name="pass" /><br />
-        <div>
-          <button type="button">Click Me!</button>
-        </div>
+        <script language="JavaScript">
+
+        function clickLoginButton()
+        {
+          //TODO AJAX magic
+        }
+
+        </script>
+
+        <form name="login">
+          <b>Email:</b> <input type="text" name="email" /><br />
+          <b>Password:</b> <input type="password" name="pass" /><br />
+          <input type="button" name="logbutt" value="Log In" onClick="clickLoginButton()"/>
+          <%= @user==nil %>
+        </form>
       </div>
       
       <div id='header'>
         <a href = "/">
-          <img src= "/images/logo.png" />
+          <img src= "/images/logo.gif" />
         </a>
       </div>
+
       
       <div id="content">
         <%= yield %>

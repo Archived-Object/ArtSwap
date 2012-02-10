@@ -1,15 +1,13 @@
 FirstApp::Application.routes.draw do
   get "pages/home"
-
+  get "pages/greeting"
   get "pages/user"
-
   get "pages/swap"
 
   get "users/new"
 
   match '/signup',  :to => 'users#new'
   match '/swap',  :to => 'pages#swap'
-  match '/user',  :to => 'pages#user'
   match '/home',  :to => 'pages#greeting'
 
 
